@@ -32,3 +32,18 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+DIFFICULTER RENCONTRER
+Déjà, au début, mes tests, ils passaient pas. Un test en particulier, pour supprimer un produit, il me disait que le message de l'API était pas bon. En fait, c'était juste un smiley qui manquait, mais bon, un test qui foire, c'est toujours stressant ! Ça m'a appris qu'il faut vraiment être précis quand on teste et bien comprendre ce que l'API renvoie exactement.
+
+Après, quand j'ai voulu rendre mon code un peu plus propre avec flake8, là, c'était la fête aux erreurs ! Des lignes vides pas au bon endroit, des espaces qui traînent, des commentaires mal formés... J'me suis rendu compte que respecter les conventions de style, c'est pas juste pour faire joli, ça aide vraiment à lire le code plus facilement.
+
+Et puis, Git, quelle aventure ! J'ai eu toutes les peines du monde à pousser mon projet sur GitHub. Des erreurs bizarres, comme quoi il trouvait pas le dépôt, ou que ma branche locale n'existait pas... J'ai dû trifouiller pas mal de commandes avant de comprendre comment ça marchait vraiment, comment lier ma branche locale au dépôt distant, tout ça.
+
+Ah oui, et flake8 qui me disait qu'il existait pas ! Fallait juste l'installer dans mon environnement virtuel, mais sur le coup, j'étais un peu perdu. Ça m'a montré qu'il faut bien penser à installer tous les outils dont on a besoin.
+
+Pour tester mon API, j'ai essayé de taper une commande GET direct dans le terminal... grosse erreur ! J'ai appris qu'il faut un client HTTP pour ça, comme un navigateur ou un outil spécialisé.
+
+Et le pompon, c'est quand j'ai voulu automatiser tout ça avec GitHub Actions. Mon workflow plantait parce qu'il trouvait pas flake8 ! Encore une histoire d'installation, fallait que je l'ajoute à mon fichier de dépendances.
+
+Même mon éditeur de code m'a fait des frayeurs avec un avertissement sur ma clé privée pour le déploiement. Apparemment, c'est normal, mais sur le moment, ça inquiète !
