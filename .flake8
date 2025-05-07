@@ -1,0 +1,3 @@
+[flake8]
+max-line-length = 88
+# exmple de test de correction verifie la longueur de la ligne
